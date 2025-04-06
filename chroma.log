@@ -1,0 +1,69 @@
+[32mINFO[0m:     [11-03-2025 10:48:00] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [11-03-2025 10:48:00] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [11-03-2025 10:48:00] Starting component System
+[36mDEBUG[0m:    [11-03-2025 10:48:00] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [11-03-2025 10:48:00] Starting component SqliteDB
+[36mDEBUG[0m:    [11-03-2025 10:48:01] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [11-03-2025 10:48:01] Starting component Posthog
+[36mDEBUG[0m:    [11-03-2025 10:48:01] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [11-03-2025 10:48:01] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [11-03-2025 10:48:01] Starting component LocalExecutor
+[36mDEBUG[0m:    [11-03-2025 10:48:01] Starting component SegmentAPI
+[36mDEBUG[0m:    [11-03-2025 10:48:01] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [11-03-2025 10:48:01] Started server process [[36m12436[0m]
+[32mINFO[0m:     [11-03-2025 10:48:01] Waiting for application startup.
+[32mINFO[0m:     [11-03-2025 10:48:01] Application startup complete.
+[32mINFO[0m:     [11-03-2025 10:48:01] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [11-03-2025 10:55:14] 127.0.0.1:44656 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 10:55:14] 127.0.0.1:44670 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 10:55:14] 127.0.0.1:44670 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 10:55:14] 127.0.0.1:44656 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[36mDEBUG[0m:    [11-03-2025 10:55:14] Collection langchain already exists, returning existing collection.
+[32mINFO[0m:     [11-03-2025 10:55:14] 127.0.0.1:44656 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 12:10:19] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [11-03-2025 12:10:19] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component System
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component SqliteDB
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component Posthog
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component LocalExecutor
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component SegmentAPI
+[36mDEBUG[0m:    [11-03-2025 12:10:19] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [11-03-2025 12:10:19] Started server process [[36m1379[0m]
+[32mINFO[0m:     [11-03-2025 12:10:19] Waiting for application startup.
+[32mINFO[0m:     [11-03-2025 12:10:19] Application startup complete.
+[32mINFO[0m:     [11-03-2025 12:10:19] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [11-03-2025 12:10:51] 127.0.0.1:45128 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 12:10:51] 127.0.0.1:45132 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 12:10:51] 127.0.0.1:45132 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [11-03-2025 12:10:51] Collection langchain already exists, returning existing collection.
+[32mINFO[0m:     [11-03-2025 12:10:51] 127.0.0.1:45128 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[36mDEBUG[0m:    [11-03-2025 12:10:51] Collection langchain already exists, returning existing collection.
+[32mINFO[0m:     [11-03-2025 12:10:51] 127.0.0.1:45128 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 12:23:04] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [11-03-2025 12:23:37] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [11-03-2025 12:23:37] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component System
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component SqliteDB
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component Posthog
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component LocalExecutor
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component SegmentAPI
+[36mDEBUG[0m:    [11-03-2025 12:23:37] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [11-03-2025 12:23:38] Started server process [[36m1789[0m]
+[32mINFO[0m:     [11-03-2025 12:23:38] Waiting for application startup.
+[32mINFO[0m:     [11-03-2025 12:23:38] Application startup complete.
+[32mINFO[0m:     [11-03-2025 12:23:38] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [11-03-2025 12:23:54] 127.0.0.1:54076 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 12:23:54] 127.0.0.1:54078 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [11-03-2025 12:23:54] 127.0.0.1:54078 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [11-03-2025 12:23:54] Collection langchain already exists, returning existing collection.
+[32mINFO[0m:     [11-03-2025 12:23:54] 127.0.0.1:54076 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[36mDEBUG[0m:    [11-03-2025 12:23:54] Collection langchain already exists, returning existing collection.
+[32mINFO[0m:     [11-03-2025 12:23:54] 127.0.0.1:54076 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
