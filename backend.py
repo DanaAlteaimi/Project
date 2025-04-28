@@ -41,7 +41,7 @@ llm = ChatOpenAI(model=model)
 
 # LangChain setup
 embedding_function = OpenAIEmbeddings()
-chroma_client = chromadb.Client()
+chroma_client = chromadb.HttpClient(host=os.environ.get("CHROMADB_HOST"), port=os.environ.get("CHROMADB_PORT"))
 collection = chroma_client.get_or_create_collection("langchain")
 vectorstore = Chroma(
             client=chroma_client,
@@ -332,5 +332,3 @@ async def rag_chat(request: RAGChatRequest):
 
     # Use StreamingResponse to return
     return StreamingResponse(stream_response(), media_type="text/plain")
-
-
