@@ -22,19 +22,25 @@ if "chat_names" not in st.session_state:
 def load_chats_from_db():
     response = requests.get(LOAD_CHAT_URL)
 
-    if response.status_code == 200:
-        records = response.json()
-        for record in records:
-            chat_id = record['id']
-            messages = record['messages']
-            name = record['chat_name']
-            pdf_path = record['pdf_path']
-            pdf_name = record['pdf_name']
-            pdf_uuid = record['pdf_uuid']
-            st.session_state["history_chats"].append({"id": chat_id, "messages": messages, "pdf_name":pdf_name, "pdf_path":pdf_path, "pdf_uuid":pdf_uuid})
-            st.session_state["chat_names"][chat_id] = name
-    else:
-        print(f"Failed to retrieve data. Status code: {response.status_code}")
+   if response.status_code == 200:
+    records = response.json()
+    for record in records:
+        chat_id = record['id']
+        messages = record['messages']
+        name = record['chat_name']
+        pdf_path = record['pdf_path']
+        pdf_name = record['pdf_name']
+        pdf_uuid = record['pdf_uuid']
+        st.session_state["history_chats"].append({
+            "id": chat_id,
+            "messages": messages,
+            "pdf_name": pdf_name,
+            "pdf_path": pdf_path,
+            "pdf_uuid": pdf_uuid
+        })
+        st.session_state["chat_names"][chat_id] = name
+else:
+    print(f"Failed to retrieve data. Status code: {response.status_code}")
 
 def save_chat_to_db(chat_id, chat_name, messages, pdf_name, pdf_path, pdf_uuid):
     payload = {
